@@ -1,0 +1,12 @@
+<md-card>
+    <md-card-content>
+        <form>
+            <md-form-field>
+                <input [(ngModel)]="question.text" name="question" mdInput placeholder="Question">
+            </md-form-field>
+        </form>
+    </md-card-content>
+    <md-card-actions>
+        <button (click)="post(question)" md-button>POST</button>
+    </md-card-actions>
+</md-card>
